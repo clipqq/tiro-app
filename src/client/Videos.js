@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
 import './app.css';
-import Videos from './Videos'
 
-export default class App extends Component {
+export default class Videos extends Component {
   state = { username: null };
 
   componentDidMount() {
@@ -16,7 +15,6 @@ export default class App extends Component {
     return (
       <div>
         {username ? <h1>{`Hello ${username}`}</h1> : <h1>Loading... please wait!</h1>}
-        <Videos />
       </div>
     );
   }
